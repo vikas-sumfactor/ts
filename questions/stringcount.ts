@@ -1,12 +1,12 @@
-function stringCount(){
-    const str: string = "vikas";
-  const array: string[] = str.split('');
-    
-    let count:number=0;
-    for(let i:number =0; i<str.length; i++){
-  
-      count++;
+function countChars(str: string): { [char: string]: number } {
+  const charCounts = {};
+  for (const char of str) {
+    if (charCounts[char]) {
+      charCounts[char]++;
+    } else {
+      charCounts[char] = 1;
     }
-    console.log(count);
   }
-  stringCount();
+  return charCounts;
+}
+console.log(countChars("abcda"));

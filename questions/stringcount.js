@@ -1,11 +1,14 @@
-function stringCount() {
-    // const str:string[]=["vikas"];
-    var str = "vikas";
-    var array = str.split('');
-    var count = 0;
-    for (var i = 0; i < str.length; i++) {
-        count++;
+function countChars(str) {
+    var charCounts = {};
+    for (var _i = 0, str_1 = str; _i < str_1.length; _i++) {
+        var char = str_1[_i];
+        if (charCounts[char]) {
+            charCounts[char]++;
+        }
+        else {
+            charCounts[char] = 1;
+        }
     }
-    console.log(count);
+    return charCounts;
 }
-stringCount();
+console.log(countChars("abcda"));

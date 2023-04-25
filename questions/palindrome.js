@@ -2,11 +2,11 @@ function palindrome(str) {
     var left = 0;
     var right = str.length - 1;
     while (left < right) {
-        if (str[left] === str[right])
-            left++;
+        if (str[left] !== str[right])
+            return false;
+        left++;
         right--;
-        return true;
     }
-    return false;
+    return true;
 }
-console.log(palindrome("abcd"));
+console.log(palindrome("vikas"));
