@@ -14,6 +14,7 @@
 
 8. Write a function that takes a string as input and returns true if the string can be rearranged to form a palindrome, and false otherwise.
 
-9. Write a function that takes an array of integers as input and returns the maximum subarray sum, where a subarray is defined as a contiguous subsequence of the original array.
+9. Write a function that takes an array of integers as input and returns the maximum subarray sum, where a subarray is defined as a contiguous subsequence of the original
+ array.
 
 10. Write a function that takes a string as input and returns true if it is a valid IPv4 address in dot-decimal notation, and false otherwise.
